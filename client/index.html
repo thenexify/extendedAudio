@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ExtendedAudio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Gabarito&family=Inter:wght@600&family=Kaushan+Script&family=Montserrat:wght@500;600;800&family=Poppins:wght@500&family=Raleway:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/style.css">
+    <link rel="shortcut icon" href="/static/img/extendedaudio.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <img src="/static/img/brand.png" alt="ExtendedAudio">
+        </div>
+        <div class="links">
+            <a href="#" class="link">Attributions</a>
+            <a href="mailto:thenexify@outlook.com" class="link">Mail Us</a>
+        </div>
+        <div class="links-ext">
+            <a href="https://github.com/thenexify" class="link-ext">Nexify</a>
+        </div>
+    </nav>
+        <div class="sidebar">
+            <a href="#" class="button-sidebar">
+                <img src="/static/css/icons8-home-48.png" title="Home" height="28" width="28">
+            </a>
+            <a href="#" class="button-sidebar">
+                <img src="/static/css/icons8-search-50.png" title="Search" height="28" width="28">
+            </a>
+            <a href="#" class="button-sidebar">
+                <img src="/static/css/icons8-playlist-48.png" title="Mixes + Playlists" height="28" width="28">
+            </a>
+            <a href="#" class="button-sidebar">
+                <img src="/static/css/icons8-mic-48.png" title="Podcasts" height="28" width="28">
+            </a>
+        </div>
+        <section class="right-items">
+            <section class="carousel">
+                <p class="lg-carousel">ExtendedAudio</p>
+            </section>
+            <section class="recommended" id="recommended">
+                <div class="lg-flex-center">Recommended</div>
+                <div id="music-container"></div>
+            </section>
+        </section>
+        <section class="player" id="player">
+            <div class="status">
+                <p class="spaced">NOW PLAYING</p>
+            </div>
+            <div class="songName" id="xgxce">
+                <img id="songImage" src="/static/covers/blinding_lights.jpeg" alt="banner" height="50" width="50">
+                <div class="flex-column">
+                    <p id="songName">Blinding Lights</p>
+                </div>
+            </div>
+                    <div class="controls">
+                        <div class="flex-row">
+                            <button class="btn-play"><i id="backward" class="bi bi-skip-backward-fill"></i></button>
+                        <button class="btn-play"><i id="prev" class="bi bi-skip-start-fill"></i></button>
+                        <button class="btn-play"><i id="masterplay" class="bi bi-play-fill"></i></button>
+                        <button class="btn-play"><i id="next" class="bi bi-skip-end-fill"></i></button>
+                        <button class="btn-play"><i id="forward" class="bi bi-skip-forward-fill"></i></button>
+                        </div>
+                    </div>
+                    <div id="progress">
+                        <div class="flex-row">
+                            <p id="currentTime">--:--</p>
+                        <input type="range" id="progressBar" min="0" max="100" value="0">
+                        <p id="duration">--:--</p>
+                        </div>
+                    </div>
+            <div class="mediaControl">
+                <div class="flex-row">
+                    <button class="btn-play"><i id="loop" class="bi bi-repeat"></i></button>
+                    <button class="btn-play"><i class="bi bi-shuffle"></i></button>
+                    <button class="btn-play"><i class="bi bi-volume-up-fill"></i></button>
+                    <button class="btn-play"><i class="bi bi-three-dots"></i></button>
+                </div>
+                <div class="flex-row">
+                    <button id="togglePlayer" class="btn-play"><i class="bi bi-chevron-up"></i></button>
+                </div>
+            </div>
+        </section>
+        <script src="/static/js/index.js"></script>
+        <script src="/static/js/toggle.js"></script>
+</body>
+</html>
